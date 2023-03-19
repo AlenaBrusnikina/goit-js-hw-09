@@ -34,9 +34,3 @@ function stopChangeBodyColor() {
 
 refs.containerEl.style.margin = '50px';
 refs.containerEl.style.textAlign = 'center';
-refs.buttonStartEl.style.padding = '10px 30px';
-refs.buttonStopEl.style.padding = '10px 30px';
-refs.buttonStartEl.style.backgroundColor = 'white';
-refs.buttonStopEl.style.backgroundColor = 'white';
-refs.buttonStartEl.style.fontSize = '25px';
-refs.buttonStopEl.style.fontSize = '25px';
