@@ -16,3 +16,46 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.value {
+  font-size: 38px;
+}
+
+.label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: #e2e0e0;
+  border-radius: 5px;
+}
+
+input {
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+label {
+  font-size: 20px;
+}
