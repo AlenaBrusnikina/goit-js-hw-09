@@ -2,5 +2,5 @@ function e(e){return e&&e.__esModule?e.default:e}var t="undefined"!=typeof globa
 //!Для підрахунку значень ms - різниця між кінцевою і поточною датою в мілісекундах
 function(e){const t=1e3,n=60*t,a=60*n,o=24*a,i=U(Math.floor(e/o)),r=U(Math.floor(e%o/a)),l=U(Math.floor(e%o%a/n)),c=U(Math.floor(e%o%a%n/t));return{days:i,hours:r,minutes:l,seconds:c}}(t);B.valueDaysEl.textContent=e,B.valueHoursEl.textContent=n,B.valueMinutesEl.textContent=a,B.valueSecondsEl.textContent=o}else clearInterval(J)}),1e3)})))}};
 //!Приймає число та приводить до строки, додаючи в початок 0, якщо число менше 2-х знаків
-function U(e){return String(e).padStart(2,"0")}(0,d.default)(B.textInputEl,K),B.containerEl.style.margin="50px",B.containerEl.style.textAlign="center";
-//# sourceMappingURL=02-timer.233ef3ee.js.map
+function U(e){return e.toString().padStart(2,"0")}(0,d.default)(B.textInputEl,K),B.containerEl.style.margin="50px",B.containerEl.style.textAlign="center";
+//# sourceMappingURL=02-timer.40c74269.js.map

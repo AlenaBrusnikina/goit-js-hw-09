@@ -2,5 +2,5 @@
 //!Для підрахунку значень ms - різниця між кінцевою і поточною датою в мілісекундах
 function(e){var t=1e3,n=60*t,a=60*n,i=24*a,o=U(Math.floor(e/i)),r=U(Math.floor(e%i/a)),l=U(Math.floor(e%i%a/n)),c=U(Math.floor(e%i%a%n/t));return{days:o,hours:r,minutes:l,seconds:c}}(t),a=n.days,i=n.hours,o=n.minutes,r=n.seconds;B.valueDaysEl.textContent=a,B.valueHoursEl.textContent=i,B.valueMinutesEl.textContent=o,B.valueSecondsEl.textContent=r}else clearInterval(J)}),1e3)})))}};
 //!Приймає число та приводить до строки, додаючи в початок 0, якщо число менше 2-х знаків
-function U(e){return String(e).padStart(2,"0")}(0,d.default)(B.textInputEl,K),B.containerEl.style.margin="50px",B.containerEl.style.textAlign="center"}();
-//# sourceMappingURL=02-timer.3be089e5.js.map
+function U(e){return e.toString().padStart(2,"0")}(0,d.default)(B.textInputEl,K),B.containerEl.style.margin="50px",B.containerEl.style.textAlign="center"}();
+//# sourceMappingURL=02-timer.75c43bb5.js.map
