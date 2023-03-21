@@ -19,16 +19,17 @@ function startChangeBodyColor() {
     let colorBody = getRandomHexColor();
     refs.containerEl.style.backgroundColor = colorBody;
   }, 1000);
-  refs.buttonStartEl.disabled = true;
-  refs.buttonStopEl.disabled = false;
+
+  refs.buttonStartEl.setAttribute('disabled','disabled');
+  refs.buttonStopEl.removeAttribute('disabled');
 }
 
 refs.buttonStopEl.addEventListener('click', stopChangeBodyColor);
 
 function stopChangeBodyColor() {
   clearInterval(timerId);
-  refs.buttonStartEl.disabled = false;
-  refs.buttonStopEl.disabled = true;
+  refs.buttonStartEl.removeAttribute('disabled');
+  refs.buttonStopEl.setAttribute('disabled','disabled');
 }
 
 refs.containerEl.style.margin = '50px';
