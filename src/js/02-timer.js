@@ -50,8 +50,9 @@ flatpickr(refs.textInputEl, options);
 
 //!Приймає число та приводить до строки, додаючи в початок 0, якщо число менше 2-х знаків
 function addLeadingZero(value) {
-  return String(value).padStart(2, '0');
+  return value.toString().padStart(2, '0');
 }
+
 
 //!Для підрахунку значень ms - різниця між кінцевою і поточною датою в мілісекундах
 function convertMs(ms) {
